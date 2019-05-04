@@ -47,7 +47,13 @@ public class AtlasSplitterMain extends ApplicationAdapter {
                     atlasRegion.originalHeight);
 
             // Save images
-            PixmapIO.writePNG(new FileHandle(Common.OUTPUT_DIR + atlasRegion.name + Common.PNG), partTexture);
+            String outputName;
+            if (atlasRegion.index != -1) {
+                outputName = Common.OUTPUT_DIR + atlasRegion.name + "_" + atlasRegion.index + Common.PNG;
+            } else {
+                outputName = Common.OUTPUT_DIR + atlasRegion.name + Common.PNG;
+            }
+            PixmapIO.writePNG(new FileHandle(outputName), partTexture);
 
             partTexture.dispose();
             System.out.println("[" + (i + 1) + "/" + spritesTotal + "] Processed: " + atlasRegion.name);
