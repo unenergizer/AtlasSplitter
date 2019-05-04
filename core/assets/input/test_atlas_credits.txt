@@ -1,0 +1,7 @@
+This test atlas was implemented by downloading free graphics from OpenGameArt.org.
+I did not create these graphic assets. They are merely here for testing.
+
+Original Author: 7soul
+Submitted by: gnola14 
+Link: https://opengameart.org/content/496-pixel-art-icons-for-medievalfantasy-rpg
+License: CC0 https://creativecommons.org/publicdomain/zero/1.0/
